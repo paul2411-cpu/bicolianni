@@ -27,6 +27,8 @@
             padding-right: 20px;
             width: 100%;
             box-sizing: border-box;
+            position: relative; /* Added position: relative; to the header */
+            z-index: 10; /* Ensure header is above the menu */
         }
 
         header .logo {
@@ -134,20 +136,20 @@
             display: flex;
             flex-direction: column;
             position: fixed;
-            top: 80px;
+            top: 60px; /* Changed from 80px to 60px */
             right: 0;
             background-color: #000;
-            width: 250px; /* Changed from 100% to a fixed width */
-            height: calc(100vh - 80px);
-            align-items: flex-start; /* Changed to flex-start */
-            justify-content: flex-start; /* Changed to flex-start */
-            padding-top: 20px; /* Added padding to the top */
-            padding-left: 20px;  /* Added left padding */
+            width: 250px;
+            height: calc(100vh - 60px); /* Changed from 80px to 60px */
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: 20px;
+            padding-left: 20px;
             gap: 20px;
             transform: translateX(100%);
             transition: transform 0.3s ease-in-out;
             z-index: 1000;
-            box-shadow: -2px 0 5px rgba(0,0,0,0.2); /* Added a shadow for better visibility */
+            box-shadow: -2px 0 5px rgba(0,0,0,0.2);
         }
 
         #nav-links.open {
@@ -177,6 +179,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                position: relative; /* Added  position: relative here */
             }
 
             .icon-section {
@@ -728,33 +731,4 @@
         </div>
     </footer>
     <script>
-        const bookingForm = document.querySelector('.book-form form');
-        const summaryDate = document.getElementById('selected-date');
-        const summaryTime = document.getElementById('selected-time');
-        const summaryPeople = document.getElementById('selected-people');
-        const summaryOccasion = document.getElementById('selected-occasion');
-        const summaryTotal = document.getElementById('total-price');
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        bookingForm.addEventListener('submit', (event) => {event.preventDefault();
-
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const people = document.getElementById('people').value;
-            const occasion = document.getElementById('occasion').value;
-
-
-            summaryDate.textContent = date;
-            summaryTime.textContent = time;
-            summaryPeople.textContent = people;
-            summaryOccasion.textContent = occasion;
-            summaryTotal.textContent = '$' + (parseInt(people) * 20);
-        });
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-    </script>
-</body>
-</html>
+        const bookingForm = document.querySelector('.bo
