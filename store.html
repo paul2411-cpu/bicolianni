@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mainlogo.png" type="image/png">
+    <title>Store - Bicolanni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            .text-container, .product-container {
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 15px;
+            }
+            .text-container {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: sans-serif; margin: 0; padding: 0; background-color: #000; color: #fff; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden;">
+    <header style="background-color: #f59e0b; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="logo" style="display: flex; align-items: center;">
+            <img src="mainlogo.png" alt="Company Logo" style="height: 50px;"> 
+        </div>
+        <nav style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Home</a>
+            <a href="Aboutus.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">About Us</a>
+            <a href="Contactus.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Contact Us</a>
+            <a href="store.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Store</a>
+        </nav>
+    </header>
+
+    <main style="flex: 1; display: flex; flex-direction: row; align-items: center; justify-content: space-around; padding: 20px; box-sizing: border-box;">
+        <div class="text-container" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 50%; padding-right: 20px; box-sizing: border-box;">
+            <h1 style="font-size: 2.5em; margin-bottom: 20px;">BICOLIANNI</h1>
+            <p style="font-size: 1.1em; line-height: 1.7;">A bold fusion of classic Italian pasta and the rich, spicy flavors of Bicol Express. Savor the perfect harmony of rich, creamy Bicol Express sauce poured over premium Italian pasta – a one-of-a-kind cultural experience in every bite.</p>
+            <p></p>
+            <p>₱160 / Original Bicolianni – Classic version with pork Bicol Express</p>
+            <p>Spice Levels: Mild | Medium | Spicy </p>
+        </div>
+        <div class="product-container" style="background-color: #333; border-radius: 8px; padding: 20px; max-width: 400px; width: 100%; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-left: 20px; box-sizing: border-box;">
+            <h2 style="font-size: 2em; color: #e67e22; margin-bottom: 10px;">Premium Pasta Product</h2>
+            <div class="video-container" style="margin-top: 20px; display: flex; justify-content: center;">
+                <video controls style="border-radius: 8px; max-width: 100%; height: auto;">
+                    <source src="bicolianni vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <button style="padding: 10px 20px; background-color: #f59e0b; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; margin-top: 10px;">Add to Cart</button>
+        </div>
+    </main>
+
+    <footer class="bottom-nav" style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; border-top: 1px solid #333; width: 100%;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%;">
+            <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin: 0;">
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#fff'">Brand</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#fff'">Policy</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#fff'">Shop</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#fff'">Subscribe</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
