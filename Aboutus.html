@@ -18,36 +18,67 @@
         }
 
         header {
-            background-color: #f59e0b;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            width: 100%;
-        }
+  background-color: #f59e0b;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
 
-        header .logo {
-            font-size: 24px;
-            font-weight: 600;
-        }
+header .logo {
+  font-size: 24px;
+  font-weight: 600;
+}
 
-        header nav {
-            display: flex;
-            gap: 20px;
-        }
+header nav {
+  display: flex;
+  gap: 20px;
+}
 
-        header nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 16px;
-        }
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-        header nav a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+header nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.icon-section {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.icon-section i {
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-section {
+    justify-content: center;
+  }
+}
 
         .about-container {
             border-radius: 8px;
