@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mainlogo.png" type="image/png">
+    <title>About Us - Bicolanni</title>
+    
+    <style>
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+
+            .image-content {
+                order: -1;
+            }
+
+            .text-content {
+                padding: 30px;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2, h3 {
+                text-align: center;
+            }
+
+            .team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%; /* Ensure it tries to fit the container */
+}
+
+.team-member img {
+    width: auto; /* Allow the image to scale */
+    max-width: 200px; /* Set a maximum width */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; /* Add a consistent left margin for spacing */
+}
+
+.team-member .member-info {
+    margin-right: auto; /* Allow text to take up remaining space */
+    max-width: none; /* Remove the 50% limit, let it be flexible */
+}
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body style="font-family: sans-serif; margin: 0; padding: 0; background-color: #000; color: #fff; display: flex; flex-direction: column; align-items: center; min-height: 100vh;">
+    <header style="background-color: #f59e0b; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box;">
+        <div class="logo" style="display: flex; align-items: center;">
+            <img src="mainlogo.png" alt="Company Logo" style="height: 50px;"> 
+        </div>
+        <nav style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Home</a>
+            <a href="Aboutus.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">About Us</a>
+            <a href="Contactus.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Contact Us</a>
+            <a href="store.html" style="color: #ffffff; text-decoration: none; font-size: 16px;">Store</a>
+        </nav>
+    </header>
+
+    <div class="about-container" style="border-radius: 8px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; max-width: 960px; margin: 20px 0; align-items: center;">
+        <div class="text-content" style="padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h2 style="color: #e67e22; margin-bottom: 10px; font-size: 2.5em;">About Us</h2>
+            <h3 style="font-size: 1.8em; margin-bottom: 20px; color: #fff;">Welcome</h3>
+            <p style="line-height: 1.8; margin-bottom: 20px; color: #ddd;">BICOLIANNI – Where culinary traditions collide in the most delicious way. This bold fusion dish brings together the timeless elegance of classic Italian pasta with the fiery, flavorful punch of the iconic Filipino Bicol Express. Indulge in a rich, creamy coconut-based sauce infused with chili, shrimp paste, and savory spices, generously coating al dente Italian noodles. Each bite delivers a mouthwatering symphony of spice, creaminess, and umami—a true celebration of two cultures on one unforgettable plate.</p>
+        </div>
+        <div class="image-content" style="width: 100%; height: auto; overflow: hidden;">
+            <img src="Bicolianni1.jpeg" alt="BICOLIANNI" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+    </div>
+
+    <div class="team-container" style="width: 100%; max-width: 960px; margin: 20px 0; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <h2 style="font-size: 2.5em; color: #e67e22; margin-bottom: 20px;">Our Team Behind Bicolianni Sauce</h2>
+        <p style="line-height: 1.8; margin-bottom: 20px; color: #ddd;">Meet the dedicated individuals who pour their passion and expertise into crafting the unique and flavorful Bicolianni sauce. We are committed to bringing you the highest quality ingredients and an authentic fusion experience with every jar.</p>
+        <div class="team-members-container">
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Shaina B. Parungao</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">As our Head of Culinary Innovation, Shaina spearheads the development of Bicolianni sauce. Her deep understanding of flavor profiles and commitment to quality ensure the perfect balance of Italian tradition and Bicolano zest in our signature sauce.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">SHAINA@gmail.com | +12345678</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <img src="Parungao, Shaina B_.jpg" alt="Shaina B. Parungao" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+    
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Notarte, Krissy Meah P.</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Krissy Meah, our Quality Assurance Manager, meticulously oversees the production process of Bicolianni sauce. Her keen eye for detail ensures that every jar meets our high standards of flavor, texture, and quality.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">NOTARTE@email.com | +9876543210</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <img src="Notarte, Krissy Meah P_.jpg" alt="Notarte, Krissy Meah P." style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+    
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Daganzo, Josiah</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Josiah is our dedicated Procurement Specialist, responsible for sourcing the finest ingredients for Bicolianni sauce. His commitment to quality ensures that only the freshest chilies, creamiest coconut milk, and most aromatic spices make their way into our product.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">daganzo@email.com | +1122334455</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <img src="Daganzo, Josiah_.jpg" alt="Daganzo, Josiah" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+    
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Ramos, Jefferson P.</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Jefferson is our Marketing and Distribution Manager, focused on sharing the unique taste of Bicolianni sauce with the world. He ensures that our product reaches your table, ready to elevate your culinary creations.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">ramos@email.com | +5566778899</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <img src="Ramos, Jefferson P_.jpg" alt="Ramos, Jefferson P." style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+    
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Patchaligan, Lawrence B.</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Lawrence is our Operations Coordinator, ensuring the smooth and efficient production of Bicolianni sauce. His organizational skills are vital in bringing our flavorful creation from our kitchen to your home.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Patchaligan@email.com | +4455667788</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <img src="Patchaligan, Lawrence B.jpg" alt="Patchaligan, Lawrence B." style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+    
+            <div class="team-member" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px; text-align: left;">
+                <div class="member-info" style="margin-right: 20px; max-width: 50%;">
+                    <h3 style="font-size: 1.2em; color: #fff; margin-bottom: 5px;">Alapad, Noemi B.</h3>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Noemi is our Customer Relations Specialist, dedicated to ensuring your satisfaction with Bicolianni sauce. She is here to answer your questions and provide support for all your culinary adventures with our sauce.</p>
+                    <p style="font-size: 0.9em; color: #ddd; margin-bottom: 10px;">Alapad@email.com | +3344556677</p>
+                    <div class="social-links" style="display: flex; gap: 10px; justify-content: flex-start; margin-top: 10px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <img src="Alapad, Noemi B..png" alt="Alapad, Noemi B." style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; margin-left: auto; margin-right: 0;">
+            </div>
+        </div>
+    </div>
+        
+
+    <footer class="bottom-nav" style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; border-top: 1px solid #333; width: 100%; margin-top: auto;">
+        <div class="container">
+            <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin: 0;">
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;">Brand</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;">Policy</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;">Shop</a></li>
+                <li><a href="#" style="color: #fff; text-decoration: none; font-size: 18px;">Subscribe</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
